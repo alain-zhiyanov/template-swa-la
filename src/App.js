@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     (async function fetchData() {
-      const response = await fetch(`/api/Stateful1/triggers/When_a_HTTP_request_is_received/invoke/api/message?api-version=2022-05-01`);
+      const response = await fetch(`/api/Stateful1/triggers/When_a_HTTP_request_is_received/invoke?api-version=2022-05-01`);
       const result = await response.json();
       
       setData(result.status);
